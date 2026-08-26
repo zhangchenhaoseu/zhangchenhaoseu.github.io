@@ -1,0 +1,67 @@
+/* Responsive layout corrections for homepage v2.2. */
+.wrap {
+  width: calc(100% - 40px);
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  gap: 32px;
+}
+
+.nav-links {
+  column-gap: 19px;
+  row-gap: 9px;
+}
+
+.nav-links a {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.hero {
+  grid-template-columns: 230px minmax(0, 1fr);
+  align-items: start;
+}
+
+@media (max-width: 790px) {
+  .nav {
+    min-height: auto;
+    display: block;
+    padding: 14px 0 11px;
+  }
+
+  .brand {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 0;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+  }
+
+  .nav-links a {
+    margin-right: 18px;
+  }
+
+  .hero {
+    grid-template-columns: 150px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .wrap {
+    width: calc(100% - 28px);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
