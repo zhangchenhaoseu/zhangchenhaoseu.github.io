@@ -1,41 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Chenhao Zhang</title>
+
+    <meta name="description"
+        content="Chenhao Zhang - Ph.D. Candidate in Transportation Engineering, Southeast University. Research on transportation optimization, vehicle routing, space-time-state networks, and emerging delivery systems.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
+<!-- ================= Navigation ================= -->
+
+<header>
+    <nav class="navbar">
+        <a href="#home" class="nav-active">Home</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#awards">Awards</a>
+    </nav>
+</header>
+
+
+<main>
+
+<!-- ================= Home ================= -->
+
+<section id="home">
+
     <h1>Chenhao Zhang</h1>
 
-    <p>
-        Welcome to my personal academic website.
+    <p class="subtitle">
+        Ph.D. Candidate in Transportation Engineering,
+        <a href="https://www.seu.edu.cn/" target="_blank">Southeast University</a>
+        <br>
+        Visiting Ph.D. Student,
+        <a href="https://www.gatech.edu/" target="_blank">Georgia Institute of Technology</a>
     </p>
 
-    <h2>About Me</h2>
 
-    <p>
-        I am a Ph.D. candidate in Transportation Engineering.
-        My research focuses on transportation optimization,
-        vehicle routing, crowdsourced delivery, and emerging delivery systems.
-    </p>
+    <div class="intro-grid">
+
+        <!-- Left -->
+        <div class="profile-column">
+
+            <img src="assets/profile.jpg"
+                 alt="Chenhao Zhang"
+                 class="profile-photo">
+
+            <div class="profile-links">
+
+                <a href="files/Chenhao_Zhang_CV.pdf" target="_blank">
+                    CV
+                </a>
+
+                <a href="https://scholar.google.com/citations?user=hJlekgkAAAAJ"
+                   target="_blank">
+                    Google Scholar
+                </a>
+
+                <a href="https://github.com/zhangchenhaoseu"
+                   target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.researchgate.net/profile/Chenhao-Zhang-13"
+                   target="_blank">
+                    ResearchGate
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Right -->
+        <div class="bio">
+
+            <p>
+                I am a Ph.D. candidate in Transportation Engineering at
+                <strong>Southeast University</strong>, advised by
+                Prof. Lin Cheng. I am currently a visiting Ph.D. student
+                at the <strong>Georgia Institute of Technology</strong>,
+                working with Prof. Srinivas Peeta.
+            </p>
+
+            <p>
+                My research focuses on
+                <strong>transportation optimization</strong>,
+                <strong>vehicle routing and scheduling</strong>,
+                <strong>space-time-state network modeling</strong>,
+                and <strong>emerging delivery systems</strong>.
+                I am particularly interested in optimization problems
+                involving time-dependent travel,
+                stochastic demand and energy consumption,
+                truck-drone collaboration,
+                crowdsourced delivery,
+                and charging infrastructure planning.
+            </p>
+
+            <p>
+                Methodologically, my work combines network modeling with
+                mixed-integer programming and decomposition algorithms,
+                including Benders decomposition, branch-and-price,
+                branch-and-cut, ADMM, and related large-scale
+                optimization techniques.
+            </p>
+
+            <p class="contact">
+                <strong>Email:</strong>
+                zhangchenhaoseu [at] foxmail [dot] com
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= Research ================= -->
+
+<section id="research">
 
     <h2>Research Interests</h2>
 
-    <ul>
-        <li>Transportation Optimization</li>
-        <li>Vehicle Routing and Scheduling</li>
-        <li>Crowdsourced Delivery</li>
-        <li>Truck–Drone Collaborative Delivery</li>
-    </ul>
+    <div class="research-grid">
 
-    <h2>Contact</h2>
+        <div class="research-card">
+            <h3>Time-dependent & Stochastic Routing</h3>
+
+            <p>
+                Vehicle routing under time-varying travel conditions
+                and uncertainty in customer demand, with an emphasis on
+                dynamic space-time networks and stochastic programming.
+            </p>
+        </div>
+
+
+        <div class="research-card">
+            <h3>Truck–Drone Collaborative Delivery</h3>
+
+            <p>
+                Space-time-state network formulations for coordinated
+                truck-drone routing with energy, payload, rendezvous,
+                and time-dependent operational constraints.
+            </p>
+        </div>
+
+
+        <div class="research-card">
+            <h3>Sustainable & Emerging Delivery Systems</h3>
+
+            <p>
+                Joint location-routing optimization for charging
+                infrastructure, crowdsourced delivery,
+                low-altitude logistics, and other emerging
+                urban delivery systems.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= Publications ================= -->
+
+<section id="publications">
+
+    <div class="section-heading">
+        <h2>Selected Publications</h2>
+    </div>
+
+
+    <!-- Paper 1 -->
+
+    <article class="publication">
+
+        <div class="pub-thumbnail venue-trc">
+            TR-C
+        </div>
+
+        <div class="pub-info">
+
+            <h3>
+                Benders decomposition for traveling salesman problem with drone:
+                A space-time-state network perspective
+            </h3>
+
+            <p class="authors">
+                <strong>Chenhao Zhang</strong>,
+                Yaoxin Wu, Tian Feng, Yifan Zhang,
+                Meng Song, Lin Cheng
+            </p>
+
+            <p class="venue">
+                Transportation Research Part C: Emerging Technologies,
+                179, 105255, 2025
+            </p>
+
+            <div class="badges">
+                <a href="#" class="badge">Paper</a>
+                <a href="https://github.com/zhangchenhaoseu"
+                   target="_blank"
+                   class="badge">
+                    Code
+                </a>
+                <span class="badge venue-badge">TR-C</span>
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- Paper 2 -->
+
+    <article class="publication">
+
+        <div class="pub-thumbnail venue-tre">
+            TR-E
+        </div>
+
+        <div class="pub-info">
+
+            <h3>
+                A two-stage stochastic programming approach for the
+                time-dependent vehicle routing problem with stochastic demands:
+                A dynamic space-time network perspective
+            </h3>
+
+            <p class="authors">
+                <strong>Chenhao Zhang</strong>,
+                Lin Xie, Yaoxin Wu, Tian Feng, Lin Cheng
+            </p>
+
+            <p class="venue">
+                Transportation Research Part E:
+                Logistics and Transportation Review,
+                215, 105105, 2026
+            </p>
+
+            <div class="badges">
+                <a href="#" class="badge">Paper</a>
+                <a href="https://github.com/zhangchenhaoseu"
+                   target="_blank"
+                   class="badge">
+                    Code
+                </a>
+                <span class="badge venue-badge">TR-E</span>
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- Paper 3 -->
+
+    <article class="publication">
+
+        <div class="pub-thumbnail venue-ae">
+            AE
+        </div>
+
+        <div class="pub-info">
+
+            <h3>
+                Benders decomposition for the charging station
+                location-routing problem under stochastic energy consumption:
+                A two-stage model with a space-electricity network perspective
+            </h3>
+
+            <p class="authors">
+                <strong>Chenhao Zhang</strong>,
+                Mingyang Du, Zhe Hu, Xinyu Jiang,
+                Yuan Liu, Lin Cheng
+            </p>
+
+            <p class="venue">
+                Applied Energy, 416, 127926, 2026
+            </p>
+
+            <div class="badges">
+                <a href="#" class="badge">Paper</a>
+                <span class="badge venue-badge">Applied Energy</span>
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- Paper 4 -->
+
+    <article class="publication">
+
+        <div class="pub-thumbnail venue-energy">
+            Energy
+        </div>
+
+        <div class="pub-info">
+
+            <h3>
+                Benders decomposition for charging station
+                location-routing problem with time-dependent travel times:
+                A space-time-electricity network perspective
+            </h3>
+
+            <p class="authors">
+                <strong>Chenhao Zhang</strong>,
+                Rui Yong, Xinyu Jiang, Yifan Zhang,
+                Meng Song, Lin Cheng
+            </p>
+
+            <p class="venue">
+                Energy, 333, 137310, 2025
+            </p>
+
+            <div class="badges">
+                <a href="#" class="badge">Paper</a>
+                <span class="badge venue-badge">Energy</span>
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <p class="more-link">
+        <a href="#">See full list of publications →</a>
+    </p>
+
+</section>
+
+
+<!-- ================= Teaching ================= -->
+
+<section id="teaching">
+
+    <h2>Teaching & Open Source</h2>
+
+    <div class="simple-card">
+
+        <h3>Teaching</h3>
+
+        <p>
+            I have served as a teaching assistant for
+            <em>Transportation Engineering</em> and
+            <em>Urban Transportation Network Analysis</em>
+            at Southeast University.
+            I have also independently delivered English lectures
+            on linear programming for international Ph.D. students.
+        </p>
+
+    </div>
+
+
+    <div class="simple-card">
+
+        <h3>Online Courses & Academic Outreach</h3>
+
+        <p>
+            I create open online courses on linear programming,
+            mixed-integer linear programming, and decomposition algorithms,
+            with applications in transportation and logistics optimization.
+        </p>
+
+    </div>
+
+
+    <div class="simple-card">
+
+        <h3>Open-source Optimization</h3>
+
+        <p>
+            I maintain open-source implementations of large-scale
+            mixed-integer programming algorithms,
+            including Benders decomposition,
+            Lagrangian relaxation,
+            branch-and-bound, and branch-and-cut.
+        </p>
+
+        <p>
+            <a href="https://github.com/zhangchenhaoseu"
+               target="_blank">
+                Visit my GitHub →
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= Awards ================= -->
+
+<section id="awards">
+
+    <h2>Selected Awards</h2>
+
+    <div class="award-list">
+
+        <div class="award-item">
+            <span class="award-year">2025</span>
+            <span>
+                China Scholarship Council (CSC) Scholarship
+                for Visiting Ph.D. Study at Georgia Tech
+            </span>
+        </div>
+
+        <div class="award-item">
+            <span class="award-year">2025</span>
+            <span>
+                Southeast University Graduate Student of the Year
+                (“Zheng Qingnian”)
+            </span>
+        </div>
+
+        <div class="award-item">
+            <span class="award-year">2023–2025</span>
+            <span>
+                National Second Prize,
+                China Graduate Mathematical Contest in Modeling
+                — Team Leader, three consecutive years
+            </span>
+        </div>
+
+        <div class="award-item">
+            <span class="award-year">2024</span>
+            <span>
+                First-class Academic Scholarship,
+                Southeast University
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================= Footer ================= -->
+
+<footer>
 
     <p>
-        Email: zhangchenhaoseu@foxmail.com
+        © 2026 Chenhao Zhang ·
+        Hosted on
+        <a href="https://pages.github.com/" target="_blank">
+            GitHub Pages
+        </a>
     </p>
+
+</footer>
+
 
 </body>
 </html>
