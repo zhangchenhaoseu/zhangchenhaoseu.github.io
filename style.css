@@ -1,0 +1,505 @@
+/* ========================================
+   Global
+======================================== */
+
+:root {
+    --accent: #a33a2b;
+    --accent-light: #f7efed;
+
+    --text: #252525;
+    --secondary: #666666;
+
+    --border: #e7e7e7;
+    --background: #ffffff;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    color: var(--text);
+    background: var(--background);
+
+    line-height: 1.6;
+
+    font-size: 16px;
+}
+
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   Layout
+======================================== */
+
+main,
+.navbar,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+main {
+    padding: 40px 24px 60px;
+}
+
+
+section {
+    margin-bottom: 65px;
+
+    scroll-margin-top: 90px;
+}
+
+
+/* ========================================
+   Navigation
+======================================== */
+
+header {
+    background: rgba(255,255,255,0.96);
+
+    border-bottom: 1px solid var(--border);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.navbar {
+    display: flex;
+    gap: 34px;
+
+    padding: 17px 24px 0;
+}
+
+
+.navbar a {
+    color: #555;
+
+    padding-bottom: 14px;
+
+    font-size: 15px;
+
+    text-decoration: none;
+}
+
+
+.navbar a:hover,
+.navbar .nav-active {
+    color: #111;
+
+    border-bottom: 2px solid var(--accent);
+}
+
+
+/* ========================================
+   Typography
+======================================== */
+
+h1 {
+    font-size: 34px;
+
+    margin:
+        0
+        0
+        2px;
+
+    line-height: 1.25;
+}
+
+
+h2 {
+    font-size: 23px;
+
+    margin-bottom: 20px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+h3 {
+    font-size: 17px;
+
+    margin-top: 0;
+
+    margin-bottom: 6px;
+}
+
+
+.subtitle {
+    margin-top: 3px;
+
+    margin-bottom: 26px;
+
+    color: var(--secondary);
+
+    font-size: 16px;
+}
+
+
+/* ========================================
+   Introduction
+======================================== */
+
+.intro-grid {
+    display: grid;
+
+    grid-template-columns:
+        210px
+        1fr;
+
+    gap: 32px;
+
+    align-items: start;
+}
+
+
+.profile-photo {
+    width: 100%;
+
+    border-radius: 5px;
+
+    object-fit: cover;
+
+    aspect-ratio: 1 / 1.08;
+}
+
+
+.profile-links {
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    font-weight: 600;
+}
+
+
+.bio p {
+    margin-top: 0;
+
+    margin-bottom: 16px;
+}
+
+
+.contact {
+    margin-top: 22px !important;
+}
+
+
+/* ========================================
+   Research
+======================================== */
+
+.research-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+
+.research-card {
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    padding: 18px;
+
+    background: #fafafa;
+}
+
+
+.research-card h3 {
+    color: #333;
+}
+
+
+.research-card p {
+    margin-bottom: 0;
+
+    color: var(--secondary);
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   Publications
+======================================== */
+
+.publication {
+    display: grid;
+
+    grid-template-columns:
+        150px
+        1fr;
+
+    gap: 20px;
+
+    padding: 23px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.pub-thumbnail {
+    width: 150px;
+    height: 105px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    background: #f6f6f6;
+
+    color: #555;
+}
+
+
+.pub-info h3 {
+    margin-bottom: 5px;
+
+    line-height: 1.4;
+}
+
+
+.authors {
+    margin:
+        0
+        0
+        2px;
+
+    font-size: 14px;
+}
+
+
+.venue {
+    margin:
+        0
+        0
+        8px;
+
+    font-size: 14px;
+
+    color: var(--secondary);
+
+    font-style: italic;
+}
+
+
+.badges {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 7px;
+}
+
+
+.badge {
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+    padding: 2px 9px;
+
+    background: #fafafa;
+
+    color: #555;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+
+.badge:hover {
+    border-color: var(--accent);
+
+    color: var(--accent);
+
+    text-decoration: none;
+}
+
+
+.venue-badge {
+    background: var(--accent-light);
+
+    border-color: transparent;
+
+    color: var(--accent);
+}
+
+
+.more-link {
+    margin-top: 18px;
+
+    text-align: right;
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   Teaching
+======================================== */
+
+.simple-card {
+    margin-bottom: 24px;
+}
+
+
+.simple-card p {
+    margin-top: 5px;
+
+    color: #444;
+}
+
+
+/* ========================================
+   Awards
+======================================== */
+
+.award-item {
+    display: grid;
+
+    grid-template-columns:
+        110px
+        1fr;
+
+    gap: 14px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.award-year {
+    color: var(--secondary);
+
+    font-weight: 600;
+}
+
+
+/* ========================================
+   Footer
+======================================== */
+
+footer {
+    border-top: 1px solid var(--border);
+
+    padding:
+        20px
+        24px
+        45px;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        gap: 18px;
+
+        overflow-x: auto;
+    }
+
+
+    main {
+        padding-top: 28px;
+    }
+
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .profile-column {
+        max-width: 220px;
+    }
+
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .publication {
+        grid-template-columns: 1fr;
+    }
+
+
+    .pub-thumbnail {
+        width: 130px;
+
+        height: 90px;
+    }
+
+
+    .award-item {
+        grid-template-columns: 1fr;
+
+        gap: 2px;
+    }
+
+
+    h1 {
+        font-size: 29px;
+    }
+
+}
