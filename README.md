@@ -1,4 +1,4 @@
-# Chenhao Zhang — Academic Homepage V2
+# Chenhao Zhang — Academic Homepage
 
 Upload the contents of this folder to the root of `zhangchenhaoseu.github.io`.
 
